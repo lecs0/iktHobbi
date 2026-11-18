@@ -1,6 +1,6 @@
-// 2026 IMSA WeatherTech SportsCar Championship team profiles.
-// Import with: import { imsaTeams } from './imsa_weathertech_2026.js';
-export const imsaTeams = {
+// 2026 IMSA WeatherTech SportsCar Championship team profiles and standings.
+// Load this file before the page scripts to make imsaTeams available.
+const imsaTeams = {
   "season": 2026,
   "championship": "IMSA WeatherTech SportsCar Championship",
   "source_standings_url": "https://www.imsa.com/weathertech/standings",
@@ -46,7 +46,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FConnor%20Zilisch%2F85908"
           }
-        ]
+        ],
+        "standings": {
+          "position": 1,
+          "points": 3020,
+          "gap_to_leader": 0
+        }
       },
       {
         "number": "93",
@@ -82,7 +87,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FNick%20Yelloly%2F81536"
           }
-        ]
+        ],
+        "standings": {
+          "position": 2,
+          "points": 2723,
+          "gap_to_leader": 297
+        }
       },
       {
         "number": "6",
@@ -113,7 +123,12 @@ export const imsaTeams = {
             "country": "Belgium",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLaurens%20%20Vanthoor%2F44146"
           }
-        ]
+        ],
+        "standings": {
+          "position": 3,
+          "points": 2709,
+          "gap_to_leader": 311
+        }
       },
       {
         "number": "24",
@@ -149,7 +164,12 @@ export const imsaTeams = {
             "country": "Belgium",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FDries%20%20Vanthoor%2F50011"
           }
-        ]
+        ],
+        "standings": {
+          "position": 4,
+          "points": 2650,
+          "gap_to_leader": 370
+        }
       },
       {
         "number": "7",
@@ -180,7 +200,12 @@ export const imsaTeams = {
             "country": "Brazil",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFelipe%20%20Nasr%2F32656"
           }
-        ]
+        ],
+        "standings": {
+          "position": 5,
+          "points": 2638,
+          "gap_to_leader": 382
+        }
       },
       {
         "number": "40",
@@ -211,7 +236,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FJordan%20%20Taylor%2F20196"
           }
-        ]
+        ],
+        "standings": {
+          "position": 6,
+          "points": 2556,
+          "gap_to_leader": 464
+        }
       },
       {
         "number": "5",
@@ -247,7 +277,12 @@ export const imsaTeams = {
             "country": "Netherlands",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FTijmen%20van%20der%20Helm%2F86715"
           }
-        ]
+        ],
+        "standings": {
+          "position": 7,
+          "points": 2525,
+          "gap_to_leader": 495
+        }
       },
       {
         "number": "60",
@@ -283,7 +318,12 @@ export const imsaTeams = {
             "country": "New Zealand",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FScott%20Dixon%2F81805"
           }
-        ]
+        ],
+        "standings": {
+          "position": 8,
+          "points": 2465,
+          "gap_to_leader": 555
+        }
       },
       {
         "number": "10",
@@ -314,7 +354,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FRicky%20Taylor%2F14425"
           }
-        ]
+        ],
+        "standings": {
+          "position": 9,
+          "points": 2448,
+          "gap_to_leader": 572
+        }
       },
       {
         "number": "25",
@@ -350,7 +395,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMarco%20Wittmann%2F81933"
           }
-        ]
+        ],
+        "standings": {
+          "position": 10,
+          "points": 2338,
+          "gap_to_leader": 682
+        }
       },
       {
         "number": "23",
@@ -386,7 +436,12 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMarco%20Sorensen%2F86803"
           }
-        ]
+        ],
+        "standings": {
+          "position": 11,
+          "points": 2242,
+          "gap_to_leader": 778
+        }
       }
     ],
     "LMP2": [
@@ -424,7 +479,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FToby%20Sowery%2F99717"
           }
-        ]
+        ],
+        "standings": {
+          "position": 1,
+          "points": 2322,
+          "gap_to_leader": 0
+        }
       },
       {
         "number": "43",
@@ -460,7 +520,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FBijoy%20Garg%2F92834"
           }
-        ]
+        ],
+        "standings": {
+          "position": 2,
+          "points": 2302,
+          "gap_to_leader": 20
+        }
       },
       {
         "number": "22",
@@ -496,7 +561,12 @@ export const imsaTeams = {
             "country": "Switzerland",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FGregoire%20Saucy%2F112956"
           }
-        ]
+        ],
+        "standings": {
+          "position": 3,
+          "points": 2127,
+          "gap_to_leader": 195
+        }
       },
       {
         "number": "99",
@@ -532,7 +602,12 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FChristian%20Rasmussen%2F91741"
           }
-        ]
+        ],
+        "standings": {
+          "position": 4,
+          "points": 2087,
+          "gap_to_leader": 235
+        }
       },
       {
         "number": "52",
@@ -568,7 +643,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FHarry%20%20Tincknell%2F44833"
           }
-        ]
+        ],
+        "standings": {
+          "position": 5,
+          "points": 2021,
+          "gap_to_leader": 301
+        }
       },
       {
         "number": "8",
@@ -609,7 +689,12 @@ export const imsaTeams = {
             "country": null,
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FTristan%20Vautier%2F35656"
           }
-        ]
+        ],
+        "standings": {
+          "position": 6,
+          "points": 1967,
+          "gap_to_leader": 355
+        }
       },
       {
         "number": "2",
@@ -645,7 +730,12 @@ export const imsaTeams = {
             "country": "New Zealand",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FHunter%20McElrea%2F98303"
           }
-        ]
+        ],
+        "standings": {
+          "position": 7,
+          "points": 1835,
+          "gap_to_leader": 487
+        }
       },
       {
         "number": "18",
@@ -681,7 +771,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLogan%20Sargeant%2F82464"
           }
-        ]
+        ],
+        "standings": {
+          "position": 8,
+          "points": 1794,
+          "gap_to_leader": 528
+        }
       },
       {
         "number": "73",
@@ -717,7 +812,12 @@ export const imsaTeams = {
             "country": "Brazil",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FEnzo%20Fittipaldi%2F107729"
           }
-        ]
+        ],
+        "standings": {
+          "position": 9,
+          "points": 1782,
+          "gap_to_leader": 540
+        }
       },
       {
         "number": "11",
@@ -753,7 +853,12 @@ export const imsaTeams = {
             "country": "France",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FCharles%20Milesi%2F82026"
           }
-        ]
+        ],
+        "standings": {
+          "position": 10,
+          "points": 1775,
+          "gap_to_leader": 547
+        }
       },
       {
         "number": "37",
@@ -794,7 +899,12 @@ export const imsaTeams = {
             "country": "Netherlands",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FJob%20Van%20Uitert%2F81731"
           }
-        ]
+        ],
+        "standings": {
+          "position": 11,
+          "points": 1182,
+          "gap_to_leader": 1140
+        }
       },
       {
         "number": "343",
@@ -830,7 +940,12 @@ export const imsaTeams = {
             "country": "Poland",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FJakub%20Smiechowski%2F81123"
           }
-        ]
+        ],
+        "standings": {
+          "position": 12,
+          "points": 325,
+          "gap_to_leader": 1997
+        }
       },
       {
         "number": "79",
@@ -861,7 +976,12 @@ export const imsaTeams = {
             "country": null,
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FGerry%20Kraut%2F12537"
           }
-        ]
+        ],
+        "standings": {
+          "position": 13,
+          "points": 268,
+          "gap_to_leader": 2054
+        }
       },
       {
         "number": "83",
@@ -897,7 +1017,12 @@ export const imsaTeams = {
             "country": "France",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMatthieu%20Vaxiviere%2F50014"
           }
-        ]
+        ],
+        "standings": {
+          "position": 14,
+          "points": 199,
+          "gap_to_leader": 2123
+        }
       }
     ],
     "GTD Pro": [
@@ -935,7 +1060,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FNeil%20Verhagen%2F80192"
           }
-        ]
+        ],
+        "standings": {
+          "position": 1,
+          "points": 3017,
+          "gap_to_leader": 0
+        }
       },
       {
         "number": "9",
@@ -976,7 +1106,12 @@ export const imsaTeams = {
             "country": "France",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFranck%20Perera%2F49251"
           }
-        ]
+        ],
+        "standings": {
+          "position": 2,
+          "points": 2979,
+          "gap_to_leader": 38
+        }
       },
       {
         "number": "4",
@@ -1007,7 +1142,12 @@ export const imsaTeams = {
             "country": "Argentina",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FNico%20Varrone%2F90325"
           }
-        ]
+        ],
+        "standings": {
+          "position": 3,
+          "points": 2949,
+          "gap_to_leader": 68
+        }
       },
       {
         "number": "77",
@@ -1038,7 +1178,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FNick%20%20Tandy%2F29099"
           }
-        ]
+        ],
+        "standings": {
+          "position": 4,
+          "points": 2921,
+          "gap_to_leader": 96
+        }
       },
       {
         "number": "65",
@@ -1069,7 +1214,12 @@ export const imsaTeams = {
             "country": "Belgium",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFrederic%20%20Vervisch%2F50013"
           }
-        ]
+        ],
+        "standings": {
+          "position": 5,
+          "points": 2825,
+          "gap_to_leader": 192
+        }
       },
       {
         "number": "64",
@@ -1100,7 +1250,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMike%20%20Rockenfeller%2F8385"
           }
-        ]
+        ],
+        "standings": {
+          "position": 6,
+          "points": 2821,
+          "gap_to_leader": 196
+        }
       },
       {
         "number": "14",
@@ -1131,7 +1286,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FKyle%20Kirkwood%2F78852"
           }
-        ]
+        ],
+        "standings": {
+          "position": 7,
+          "points": 2779,
+          "gap_to_leader": 238
+        }
       },
       {
         "number": "3",
@@ -1162,7 +1322,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FAlexander%20%20Sims%2F81674"
           }
-        ]
+        ],
+        "standings": {
+          "position": 8,
+          "points": 2776,
+          "gap_to_leader": 241
+        }
       },
       {
         "number": "59",
@@ -1203,7 +1368,12 @@ export const imsaTeams = {
             "country": "Estonia",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FJuri%20Vips%2F112971"
           }
-        ]
+        ],
+        "standings": {
+          "position": 9,
+          "points": 2392,
+          "gap_to_leader": 625
+        }
       },
       {
         "number": "911",
@@ -1244,7 +1414,12 @@ export const imsaTeams = {
             "country": "Austria",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FThomas%20Preining%2F100068"
           }
-        ]
+        ],
+        "standings": {
+          "position": 10,
+          "points": 1379,
+          "gap_to_leader": 1638
+        }
       },
       {
         "number": "033",
@@ -1280,7 +1455,12 @@ export const imsaTeams = {
             "country": "Italy",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FAlessio%20Rovera%2F86861"
           }
-        ]
+        ],
+        "standings": {
+          "position": 11,
+          "points": 1257,
+          "gap_to_leader": 1760
+        }
       },
       {
         "number": "62",
@@ -1311,7 +1491,12 @@ export const imsaTeams = {
             "country": "Brazil",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FDaniel%20Serra%2F35390"
           }
-        ]
+        ],
+        "standings": {
+          "position": 12,
+          "points": 1206,
+          "gap_to_leader": 1811
+        }
       },
       {
         "number": "68",
@@ -1347,7 +1532,12 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMarco%20Sorensen%2F86803"
           }
-        ]
+        ],
+        "standings": {
+          "position": 13,
+          "points": 762,
+          "gap_to_leader": 2255
+        }
       },
       {
         "number": "48",
@@ -1383,7 +1573,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLuca%20%20Stolz%2F44131"
           }
-        ]
+        ],
+        "standings": {
+          "position": 14,
+          "points": 512,
+          "gap_to_leader": 2505
+        }
       },
       {
         "number": "75",
@@ -1420,7 +1615,54 @@ export const imsaTeams = {
             "country": "Australia",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FWill%20Power%2F112984"
           }
-        ]
+        ],
+        "standings": {
+          "position": 15,
+          "points": 350,
+          "gap_to_leader": 2667
+        }
+      },
+      {
+        "number": "74",
+        "team": "DragonSpeed",
+        "team_page_url": null,
+        "manufacturer": "Chevrolet",
+        "manufacturer_logo_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_48/q_auto/f_auto/v1/official_chevrolet_vertical_brandmark_black",
+        "car": {
+          "model": null,
+          "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_180/q_auto/f_auto/v1/26_WT_GTDPRO_74_DRAGONSPEED_CORVETTE_GT3_LBGP_PLM_lkelxr",
+          "engine": null,
+          "max_power_hp": null,
+          "tire_supplier": null
+        },
+        "drivers": [],
+        "standings": {
+          "position": 16,
+          "points": 268,
+          "gap_to_leader": 2749
+        },
+        "profile_note": "IMSA standings page does not link to a team profile for this entry."
+      },
+      {
+        "number": "15",
+        "team": "Vasser Sullivan Racing",
+        "team_page_url": null,
+        "manufacturer": "Lexus",
+        "manufacturer_logo_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_48/q_auto/f_auto/v1/official_lexus_racing_stacked_staggered_logo",
+        "car": {
+          "model": null,
+          "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_180/q_auto/f_auto/v1/26_WT_GTD_15_Lexus_uvkhwh",
+          "engine": null,
+          "max_power_hp": null,
+          "tire_supplier": null
+        },
+        "drivers": [],
+        "standings": {
+          "position": 17,
+          "points": 234,
+          "gap_to_leader": 2783
+        },
+        "profile_note": "IMSA standings page does not link to a team profile for this entry."
       },
       {
         "number": "69",
@@ -1456,7 +1698,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFabian%20%20Schiller%2F50010"
           }
-        ]
+        ],
+        "standings": {
+          "position": 18,
+          "points": 225,
+          "gap_to_leader": 2792
+        }
       }
     ],
     "GTD": [
@@ -1494,7 +1741,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FRussell%20%20Ward%2F45988"
           }
-        ]
+        ],
+        "standings": {
+          "position": 1,
+          "points": 3078,
+          "gap_to_leader": 0
+        }
       },
       {
         "number": "96",
@@ -1530,7 +1782,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFrancis%20Selldorff%2F90094"
           }
-        ]
+        ],
+        "standings": {
+          "position": 2,
+          "points": 2843,
+          "gap_to_leader": 235
+        }
       },
       {
         "number": "27",
@@ -1566,7 +1823,12 @@ export const imsaTeams = {
             "country": "Canada",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FZacharie%20%20Robichon%2F45449"
           }
-        ]
+        ],
+        "standings": {
+          "position": 3,
+          "points": 2742,
+          "gap_to_leader": 336
+        }
       },
       {
         "number": "12",
@@ -1602,7 +1864,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FAaron%20%20Telitz%2F50018"
           }
-        ]
+        ],
+        "standings": {
+          "position": 4,
+          "points": 2677,
+          "gap_to_leader": 401
+        }
       },
       {
         "number": "13",
@@ -1638,7 +1905,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLars%20Kern%2F49929"
           }
-        ]
+        ],
+        "standings": {
+          "position": 5,
+          "points": 2414,
+          "gap_to_leader": 664
+        }
       },
       {
         "number": "70",
@@ -1679,7 +1951,12 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FFrederik%20Schandorff%2F85929"
           }
-        ]
+        ],
+        "standings": {
+          "position": 6,
+          "points": 2398,
+          "gap_to_leader": 680
+        }
       },
       {
         "number": "120",
@@ -1715,7 +1992,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FElliott%20Skeer%2F39495"
           }
-        ]
+        ],
+        "standings": {
+          "position": 7,
+          "points": 2387,
+          "gap_to_leader": 691
+        }
       },
       {
         "number": "34",
@@ -1756,7 +2038,12 @@ export const imsaTeams = {
             "country": "Netherlands",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FThierry%20Vermeulen%2F113109"
           }
-        ]
+        ],
+        "standings": {
+          "position": 8,
+          "points": 2363,
+          "gap_to_leader": 715
+        }
       },
       {
         "number": "45",
@@ -1792,7 +2079,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FTrent%20%20Hindman%2F35661"
           }
-        ]
+        ],
+        "standings": {
+          "position": 9,
+          "points": 2215,
+          "gap_to_leader": 863
+        }
       },
       {
         "number": "36",
@@ -1833,7 +2125,12 @@ export const imsaTeams = {
             "country": "Turkey",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FSalih%20%20Yoluc%2F82144"
           }
-        ]
+        ],
+        "standings": {
+          "position": 10,
+          "points": 2061,
+          "gap_to_leader": 1017
+        }
       },
       {
         "number": "66",
@@ -1869,7 +2166,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FJake%20Walker%2F91198"
           }
-        ]
+        ],
+        "standings": {
+          "position": 11,
+          "points": 2033,
+          "gap_to_leader": 1045
+        }
       },
       {
         "number": "16",
@@ -1905,7 +2207,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FSheena%20Monk%2F48985"
           }
-        ]
+        ],
+        "standings": {
+          "position": 12,
+          "points": 2011,
+          "gap_to_leader": 1067
+        }
       },
       {
         "number": "81",
@@ -1941,7 +2248,12 @@ export const imsaTeams = {
             "country": "United Kingdom",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FCasper%20Stevenson%2F106600"
           }
-        ]
+        ],
+        "standings": {
+          "position": 13,
+          "points": 1978,
+          "gap_to_leader": 1100
+        }
       },
       {
         "number": "068",
@@ -1977,7 +2289,12 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMarco%20Sorensen%2F86803"
           }
-        ]
+        ],
+        "standings": {
+          "position": 14,
+          "points": 1543,
+          "gap_to_leader": 1535
+        }
       },
       {
         "number": "80",
@@ -2018,7 +2335,12 @@ export const imsaTeams = {
             "country": "Germany",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLuca%20%20Stolz%2F44131"
           }
-        ]
+        ],
+        "standings": {
+          "position": 15,
+          "points": 1372,
+          "gap_to_leader": 1706
+        }
       },
       {
         "number": "21",
@@ -2054,7 +2376,12 @@ export const imsaTeams = {
             "country": "France",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FLilou%20Wadoux%20Ducellier%2F95661"
           }
-        ]
+        ],
+        "standings": {
+          "position": 16,
+          "points": 1318,
+          "gap_to_leader": 1760
+        }
       },
       {
         "number": "023",
@@ -2090,7 +2417,12 @@ export const imsaTeams = {
             "country": "China",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FYifei%20Ye%2F113107"
           }
-        ]
+        ],
+        "standings": {
+          "position": 17,
+          "points": 1264,
+          "gap_to_leader": 1814
+        }
       },
       {
         "number": "912",
@@ -2126,7 +2458,12 @@ export const imsaTeams = {
             "country": "Netherlands",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FMorris%20Schuring%2F113097"
           }
-        ]
+        ],
+        "standings": {
+          "position": 18,
+          "points": 1189,
+          "gap_to_leader": 1889
+        }
       },
       {
         "number": "28",
@@ -2167,7 +2504,12 @@ export const imsaTeams = {
             "country": "United States",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FEric%20Zitza%2F94990"
           }
-        ]
+        ],
+        "standings": {
+          "position": 19,
+          "points": 1005,
+          "gap_to_leader": 2073
+        }
       },
       {
         "number": "44",
@@ -2208,7 +2550,75 @@ export const imsaTeams = {
             "country": "Denmark",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FNicki%20Thiim%2F38481"
           }
-        ]
+        ],
+        "standings": {
+          "position": 20,
+          "points": 729,
+          "gap_to_leader": 2349
+        }
+      },
+      {
+        "number": "89",
+        "team": "Vasser Sullivan Racing",
+        "team_page_url": null,
+        "manufacturer": "Lexus",
+        "manufacturer_logo_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_48/q_auto/f_auto/v1/official_lexus_racing_stacked_staggered_logo",
+        "car": {
+          "model": null,
+          "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_180/q_auto/f_auto/v1/26_WT_GTD_89_Lexus_kdt0ra",
+          "engine": null,
+          "max_power_hp": null,
+          "tire_supplier": null
+        },
+        "drivers": [],
+        "standings": {
+          "position": 21,
+          "points": 260,
+          "gap_to_leader": 2818
+        },
+        "profile_note": "IMSA standings page does not link to a team profile for this entry."
+      },
+      {
+        "number": "177",
+        "team": "AO Racing",
+        "team_page_url": null,
+        "manufacturer": "Porsche",
+        "manufacturer_logo_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_48/q_auto/f_auto/v1/2025_Porsche_ManufacturerPageOnly_282x188_ewrvoj",
+        "car": {
+          "model": null,
+          "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_180/q_auto/f_auto/v1/26_WT_GTD_177_AO_Porsche_ph7hni",
+          "engine": null,
+          "max_power_hp": null,
+          "tire_supplier": null
+        },
+        "drivers": [],
+        "standings": {
+          "position": 22,
+          "points": 202,
+          "gap_to_leader": 2876
+        },
+        "profile_note": "IMSA standings page does not link to a team profile for this entry."
+      },
+      {
+        "number": "46",
+        "team": "Pfaff Motorsports",
+        "team_page_url": null,
+        "manufacturer": "Lamborghini",
+        "manufacturer_logo_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_48/q_auto/f_auto/v1/official_lamborghini_logo_automobili_squadra_corse_vertical_vers_1_black_hr",
+        "car": {
+          "model": null,
+          "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_scale,w_180/q_auto/f_auto/v1/26_WT_GTD_46_PFAFF_LAMBORGHINI_TEMERARIO_2_djkhi3",
+          "engine": null,
+          "max_power_hp": null,
+          "tire_supplier": null
+        },
+        "drivers": [],
+        "standings": {
+          "position": 23,
+          "points": 193,
+          "gap_to_leader": 2885
+        },
+        "profile_note": "IMSA standings page does not link to a team profile for this entry."
       },
       {
         "number": "123",
@@ -2244,9 +2654,20 @@ export const imsaTeams = {
             "country": "New Zealand",
             "image_url": "https://res.cloudinary.com/nascarnextgen/image/upload/c_thumb,g_face,w_80,ar_1.000,z_0.6/q_auto/f_auto/v1/IMSA%2FDrivers%2FRyan%20Yardley%2F94849"
           }
-        ]
+        ],
+        "standings": {
+          "position": 24,
+          "points": 172,
+          "gap_to_leader": 2906
+        }
       }
     ]
+  },
+  "standings_info": {
+    "type": "Full season team standings",
+    "source_url": "https://www.imsa.com/weathertech/standings",
+    "source_last_updated_text": "Monday, Oct 26 at 3:29 PM ET",
+    "retrieved_date": "2026-11-18",
+    "note": "Snapshot; points and positions do not update automatically."
   }
 };
-

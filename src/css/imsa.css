@@ -633,3 +633,12 @@ tbody tr:hover, tbody tr:focus-within { background: #33271d; }
 .stats-bar span { color: #c1b8af; }
 .manufacturer img, .visual-bottom img { background: #f2eee8; padding: 3px; border-radius: 3px; }
 .driver-list img { background: #39332d; }
+
+.class-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
+.class-nav a { padding: 9px 14px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.class-nav a:hover, .class-nav a:focus-visible { border-color: var(--red); color: var(--red); }
+.class-section { margin-top: 34px; scroll-margin-top: 20px; }
+.class-heading { display: flex; align-items: center; justify-content: space-between; gap: 15px; border-left: 3px solid var(--red); padding: 3px 0 3px 12px; }
+.class-heading h3 { font: 700 25px/1 'Barlow Condensed', sans-serif; margin: 0; text-transform: uppercase; }
+.class-heading span { color: #bdb5ad; font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.class-note { color: #bdb5ad; font-size: 12px; margin: 12px 0 0; }

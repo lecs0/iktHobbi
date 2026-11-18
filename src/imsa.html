@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GTP Standings | Paddock</title>
+    <title>IMSA Standings | Paddock</title>
     <link rel="stylesheet" href="css/imsa.css">
-    <script src="js/imsadata.js" defer></script>
+    <script src="js/imsa_weathertech_2026.js" defer></script>
     <script src="js/imsa.js" defer></script>
 </head>
 
@@ -17,11 +17,11 @@
     <main class="shell">
         <section class="page-intro">
             <div>
-                <p class="eyebrow"><span class="dot"></span> 2026 SEASON &nbsp; / &nbsp; GTP CLASS</p>
+                <p class="eyebrow"><span class="dot"></span> 2026 SEASON &nbsp; / &nbsp; ALL CLASSES</p>
                 <h1>The standings<span class="accent">.</span></h1>
                 <p class="intro-copy">The teams, machines and drivers battling at the front of the field.</p>
             </div>
-            <div class="intro-aside"><span>CHAMPIONSHIP</span><strong>GTP</strong><small>TEAM STANDINGS</small></div>
+            <div class="intro-aside"><span>CHAMPIONSHIP</span><strong>IMSA</strong><small>TEAM STANDINGS</small></div>
         </section>
         <section class="standings-section" aria-labelledby="standings-heading">
             <div class="section-heading">
@@ -30,26 +30,13 @@
                     <h2 id="standings-heading">Full season standings</h2>
                 </div><span class="section-note">SELECT A TEAM TO EXPLORE <span aria-hidden="true">↗</span></span>
             </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>POS</th>
-                            <th>TEAM / CAR</th>
-                            <th>MANUFACTURER</th>
-                            <th>DRIVERS</th>
-                            <th>POINTS</th>
-                            <th>GAP</th>
-                            <th><span class="sr-only">Team page</span></th>
-                        </tr>
-                    </thead>
-                    <tbody id="standings"></tbody>
-                </table>
-            </div>
+            <nav id="class-nav" class="class-nav" aria-label="Jump to class"></nav>
+            <div id="standings"></div>
+            <p class="footnote">Standings are a snapshot, not live data. Driver lineups may vary by race.</p>
 
         </section>
     </main>
-    <footer class="footer"><span>PADDOCK <span class="accent">/</span> IMSA</span><span>2026 GTP CLASS</span></footer>
+    <footer class="footer"><span>PADDOCK <span class="accent">/</span> IMSA</span><span>2026 ALL CLASSES</span></footer>
 </body>
 
 </html>
