@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team Profile | Paddock</title>
+    <link rel="stylesheet" href="../css/imsa.css">
+    <script src="../js/imsadata.js" defer></script>
+    <script src="../js/imsateam.js" defer></script>
+</head>
+
+<body>
+    <header class="topbar"><a class="brand" href="../imsa.html"><span class="brand-mark">P</span> PADDOCK <span
+                class="brand-sub">/ IMSA</span></a><span class="topbar-label">WEATHERTECH SPORTSCAR CHAMPIONSHIP</span>
+    </header>
+    <main class="shell team-shell">
+        <a class="back-link" href="../imsa.html">← &nbsp; BACK TO STANDINGS</a>
+        <section class="team-hero">
+            <div class="team-heading">
+                <p class="eyebrow"><span class="dot"></span> 2026 SEASON &nbsp; / &nbsp; GTP CLASS</p>
+                <p id="team-number" class="car-number"></p>
+                <h1 id="team-name"></h1>
+                <p id="team-car-model" class="team-model"></p><a id="team-official-page" class="official-link">OFFICIAL
+                    TEAM PAGE ↗</a>
+            </div>
+            <div class="car-visual"><span class="visual-label">THE MACHINE <span>01 / 01</span></span><img
+                    id="team-car-image" alt="Car">
+                <div class="visual-bottom"><span>GTP <b>/</b> 2026</span><img id="team-manufacturer-logo"
+                        alt="Manufacturer logo"></div>
+            </div>
+        </section>
+        <section class="stats-bar" aria-label="Championship standings">
+            <div><span>CHAMPIONSHIP POINTS</span><strong id="team-points">—</strong></div>
+            <div><span>GAP TO LEADER</span><strong id="team-gap-to-leader">—</strong></div>
+            <div><span>MANUFACTURER</span><strong id="team-manufacturer">—</strong></div>
+        </section>
+        <div class="detail-grid">
+            <section class="detail-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">BEHIND THE WHEEL</p>
+                        <h2>Driver lineup</h2>
+                    </div><span class="section-note">2026 SEASON</span>
+                </div>
+                <ul id="team-drivers" class="driver-list"></ul>
+            </section>
+            <section class="detail-section">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">UNDER THE BODYWORK</p>
+                        <h2>Car specifications</h2>
+                    </div>
+                </div>
+                <dl class="spec-list">
+                    <div>
+                        <dt>Engine</dt>
+                        <dd id="team-engine"></dd>
+                    </div>
+                    <div>
+                        <dt>Maximum power</dt>
+                        <dd id="team-power"></dd>
+                    </div>
+                    <div>
+                        <dt>Tire supplier</dt>
+                        <dd id="team-tires"></dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+    </main>
+    <footer class="footer"><span>PADDOCK <span class="accent">/</span> IMSA</span><span>2026 GTP CLASS</span></footer>
+</body>
+
+</html>
