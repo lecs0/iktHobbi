@@ -1,4 +1,3 @@
-// 2026 24 Hours of Le Mans roster, race results and WEC points.
 export const leMans2026 = {
   "season": 2026,
   "event": "24 Hours of Le Mans",
