@@ -24,10 +24,6 @@
     color: #fff;
 }
 
-.home-intro .eyebrow {
-    margin-bottom: 29px;
-}
-
 .home-copy {
     max-width: 425px;
     color: #bdb5ad;
@@ -45,8 +41,6 @@
 }
 
 .home-index span,
-.card-index,
-.card-category,
 .card-cta,
 .home-bottom {
     font-size: 10px;
@@ -71,11 +65,6 @@
     margin-bottom: 22px;
 }
 
-.series-heading .eyebrow {
-    color: var(--red);
-    margin-bottom: 8px;
-}
-
 .series-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -83,23 +72,36 @@
 }
 
 .series-card {
-    position: relative;
     display: flex;
     flex-direction: column;
+    min-width: 0;
     min-height: 390px;
-    overflow: hidden;
     border: 1px solid #3b342e;
-    background: #1b1917;
+    background-color: #1b1917;
+    background-image: linear-gradient(180deg, rgb(14 12 11 / 12%) 10%, rgb(14 12 11 / 82%) 55%, #0e0c0b 91%), var(--card-photo);
+    background-position: center;
+    background-size: cover;
     color: #f7f4f0;
     text-decoration: none;
-    transition: transform .25s ease, border-color .25s ease, background .25s ease;
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.card-imsa {
+    --card-photo: url("https://cdn-8.motorsport.com/images/amp/2wBdpkM0/s6/01-chip-ganassi-racing-cadilla.jpg");
+}
+
+.card-wec {
+    --card-photo: url("https://cdn-4.motorsport.com/images/amp/Y99kgEqY/s1000/83-af-corse-ferrari-499p-rober-2.jpg");
+}
+
+.card-wrc {
+    --card-photo: url("https://toyotagazooracing.com/-/media/TMC/tgr/global/contents/wrc/images/report/2022/10/photo-day3-03.jpg");
 }
 
 .series-card:hover,
 .series-card:focus-visible {
     transform: translateY(-7px);
     border-color: var(--red);
-    background: #25201b;
 }
 
 .series-card:focus-visible {
@@ -107,98 +109,11 @@
     outline-offset: 4px;
 }
 
-.card-top {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 22px 24px 0;
-}
-
-.card-index {
-    color: #aaa098;
-}
-
-.card-arrow {
-    display: grid;
-    place-items: center;
-    height: 36px;
-    width: 36px;
-    border: 1px solid #51463d;
-    font-size: 19px;
-    color: var(--red);
-    transition: background .25s ease, color .25s ease;
-}
-
-.series-card:hover .card-arrow,
-.series-card:focus-visible .card-arrow {
-    background: var(--red);
-    color: #17100a;
-}
-
-.card-graphic {
-    height: 130px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
-    overflow: hidden;
-}
-
-.card-graphic>span {
-    color: #302b27;
-    font: italic 800 clamp(68px, 7.5vw, 112px)/1 'Barlow Condensed', sans-serif;
-    letter-spacing: -.06em;
-    transition: transform .35s ease, color .35s ease;
-}
-
-.series-card:hover .card-graphic>span,
-.series-card:focus-visible .card-graphic>span {
-    transform: translateX(8px);
-    color: #493425;
-}
-
-.card-graphic i {
-    position: absolute;
-    width: 28px;
-    height: 150px;
-    background: #ff901f;
-    opacity: .16;
-    transform: skewX(-25deg);
-    right: 60px;
-    top: -10px;
-}
-
-.card-graphic i:nth-of-type(2) {
-    right: 25px;
-    opacity: .09;
-}
-
-.card-graphic i:nth-of-type(3) {
-    right: -10px;
-    opacity: .05;
-}
-
-.card-wec .card-graphic i {
-    transform: skewX(-25deg) rotate(90deg);
-    top: 14px;
-}
-
-.card-wrc .card-graphic i {
-    transform: skewX(25deg);
-}
-
 .card-content {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 0 24px 25px;
-}
-
-.card-category {
-    color: var(--red);
-    font-size: 9px;
+    padding: 200px 24px 25px;
 }
 
 .card-content h3 {
@@ -260,12 +175,8 @@
         min-height: 320px;
     }
 
-    .card-graphic {
-        height: 105px;
-    }
-
-    .card-graphic>span {
-        font-size: 90px;
+    .card-content {
+        padding-top: 155px;
     }
 }
 
@@ -278,10 +189,6 @@
         font-size: 70px;
     }
 
-    .home-intro .eyebrow {
-        line-height: 1.8;
-    }
-
     .home-bottom {
         flex-direction: column;
         font-size: 9px;
@@ -291,16 +198,12 @@
 @media (prefers-reduced-motion: reduce) {
 
     .series-card,
-    .card-arrow,
-    .card-graphic>span,
     .card-cta span {
         transition: none;
     }
 
     .series-card:hover,
     .series-card:focus-visible,
-    .series-card:hover .card-graphic>span,
-    .series-card:focus-visible .card-graphic>span,
     .series-card:hover .card-cta span,
     .series-card:focus-visible .card-cta span {
         transform: none;

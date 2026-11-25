@@ -13,7 +13,6 @@ if (!team) {
   document.getElementById('team-official-page').hidden = true;
 } else {
   const standing = team.standings;
-  document.getElementById('team-class').textContent = className;
   document.getElementById('visual-class').textContent = className;
   document.getElementById('team-name').textContent = team.team;
   document.getElementById('team-number').textContent = `#${team.number}`;

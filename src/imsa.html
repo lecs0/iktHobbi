@@ -12,9 +12,15 @@
 
 <body>
 
-    <header class="topbar"><a class="brand" href="imsa.html"><span class="brand-mark">P</span> PADDOCK <span
-                class="brand-sub">/ IMSA</span></a><span class="topbar-label"></span>
-
+    <header class="topbar imsa-topbar">
+        <a class="brand" href="imsa.html"><span class="brand-mark">P</span> PADDOCK <span
+                class="brand-sub">/ IMSA</span></a>
+        <nav class="imsa-nav" aria-label="On this page">
+            <a href="#overview">Overview</a>
+            <a href="#watch-heading">YouTube</a>
+            <a href="#circuits-heading">Circuits</a>
+            <a href="#standings-heading">Standings</a>
+        </nav>
     </header>
     <main class="shell">
 
@@ -26,7 +32,7 @@
             
             <div class="imsa-explainer">
                 
-                <h1>What is IMSA<span class="accent">?</span></h1>
+                <h1 id="overview">What is IMSA<span class="accent">?</span></h1>
                 <p class="intro-copy">IMSA stands for the International Motor Sports Association, the organization behind several North American sports car racing series. Its premier competition is the IMSA WeatherTech SportsCar Championship, where teams and manufacturers race at circuits across the United States and Canada.</p>
                 <p class="intro-copy">The championship is known for multiclass racing: different types of cars share the track at the same time, but compete for wins and championship points within their own class. Faster prototype cars must navigate their way through traffic, while GT drivers battle other cars in their category.</p>
                 <p class="intro-copy">The 2026 field includes GTP and LMP2 prototypes, as well as GTD PRO and GTD cars based on production sports cars. GTD PRO features professional driver lineups, while GTD includes a mix of professional and amateur drivers. Not every class races at every event.</p>
@@ -42,7 +48,6 @@
         <section class="watch-section" aria-labelledby="watch-heading">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">WATCH THE ACTION</p>
                     <h2 id="watch-heading">IMSA on YouTube<span class="accent">.</span></h2>
                 </div>
             </div>
@@ -66,7 +71,6 @@
         <section class="circuits-section" aria-labelledby="circuits-heading">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">THE PLACES WE RACE</p>
                     <h2 id="circuits-heading">The circuits<span class="accent">.</span></h2>
                 </div>
                 <span class="section-note">11 CIRCUITS &nbsp; / &nbsp; NORTH AMERICA</span>
@@ -91,7 +95,6 @@
         <section class="page-intro">
 
             <div>
-                <p class="eyebrow"><span class="dot"></span> 2026 SEASON &nbsp; / &nbsp; ALL CLASSES</p>
                 <h1>The standings<span class="accent">.</span></h1>
                 <p class="intro-copy">The teams, machines and drivers battling at the front of the field.</p>
             </div>
@@ -114,7 +117,6 @@
         <section class="standings-section" aria-labelledby="standings-heading">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">THE LEADERBOARD</p>
                     <h2 id="standings-heading">Full season standings</h2>
                 </div><span class="section-note">SELECT A TEAM TO EXPLORE <span aria-hidden="true">↗</span></span>
             </div>
@@ -126,7 +128,11 @@
 
 
     </main>
-    <footer class="footer"><span>PADDOCK <span class="accent">/</span> IMSA</span><span>2026 ALL CLASSES</span></footer>
+      <footer class="footer" style="margin-top: 3rem;">
+    <div>
+      <p class="home-title">© 2026 Paddock. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
