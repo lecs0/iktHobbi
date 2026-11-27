@@ -2,23 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEC</title>
-    <link rel="icon" href="https://www.fiawec.com/build/images/logo-fia-white.png" type="image/x-icon">
-    <link rel="stylesheet" href="/src/css/wec.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore the 2026 24 Hours of Le Mans entry list, final race classification and WEC points.">
+    <title>24 Hours of Le Mans 2026 | Paddock</title>
+    <link rel="stylesheet" href="css/imsa.css">
+    <link rel="stylesheet" href="css/le-mans-2026.css">
 </head>
-<body>
-<header>
-    <nav>
+<body class="lemans-page">
+    <header class="topbar">
+        <a class="brand" href="../index.html"><span class="brand-mark">P</span> PADDOCK <span class="brand-sub">/ LE MANS</span></a>
+        <nav class="lm-nav" aria-label="Le Mans page navigation">
+            <a href="#event">Event</a>
+            <a href="#entry-list">Entries</a>
+            <a href="#official-sources">Official sources</a>
+        </nav>
+    </header>
+    <main class="shell lm-shell">
+        <a class="back-link lm-back" href="../index.html">← &nbsp; BACK TO PADDOCK</a>
 
-    </nav>
-</header>
+        <section class="lm-hero" id="event" aria-labelledby="event-title">
+            <div class="lm-hero-copy">
+                <p class="lm-kicker">FIA WORLD ENDURANCE CHAMPIONSHIP &nbsp; / &nbsp; 2026</p>
+                <h1 id="event-title">WHAT<br>IS WEC?<span class="accent">.</span></h1>
+                <p class="lm-lede">Sixty-two entries take on the world's most famous endurance race. Explore the final roster, race classification and WEC points awarded at Le Mans.</p>
+            </div>
+            <div class="lm-hero-mark" aria-hidden="true">
+                <span>24</span>
+                <small>HOURS</small>
+                <i>LE MANS · 2026</i>
+            </div>
+        </section>
 
-<main>
-    <a href="./le-mans-2026.html">Le Mans 2026</a>
-</main>
+        <nav class="lm-view-tabs" aria-label="Le Mans data views">
+            <button type="button" class="lm-view-tab is-active" data-view="entries" aria-pressed="true">Entry list <span>62</span></button>
+            <button type="button" class="lm-view-tab" data-view="results" aria-pressed="false">Race results</button>
+            <button type="button" class="lm-view-tab" data-view="points" aria-pressed="false">WEC points</button>
+        </nav>
 
-<footer>
-</footer>
+        <section class="lm-view" data-panel="entries" id="entry-list" aria-labelledby="entry-heading">
+            <div class="lm-section-heading">
+                <div>
+                    <p class="lm-kicker">THE FINAL ROSTER</p>
+                    <h2 id="entry-heading">Entry list<span class="accent">.</span></h2>
+                </div>
+                <p class="lm-entry-count" id="entry-count" aria-live="polite"></p>
+            </div>
+
+            <div class="lm-controls">
+                <div class="lm-class-filters" role="group" aria-label="Filter entries by class">
+                    <button type="button" class="lm-filter is-active" data-class="ALL" aria-pressed="true">All <span>62</span></button>
+                    <button type="button" class="lm-filter" data-class="HYPERCAR" aria-pressed="false">Hypercar <span>18</span></button>
+                    <button type="button" class="lm-filter" data-class="LMP2" aria-pressed="false">LMP2 <span>19</span></button>
+                    <button type="button" class="lm-filter" data-class="LMGT3" aria-pressed="false">LMGT3 <span>25</span></button>
+                </div>
+                <label class="lm-search">
+                    <span class="sr-only">Search by car number, team, manufacturer, car model or driver</span>
+                    <span aria-hidden="true">⌕</span>
+                    <input id="entry-search" type="search" placeholder="Search car, team, model or driver">
+                </label>
+            </div>
+            <div class="lm-entry-grid" id="entries" aria-live="polite"></div>
+        </section>
+
+        <section class="lm-view" data-panel="results" hidden aria-labelledby="results-heading">
+            <div class="lm-section-heading">
+                <div>
+                    <p class="lm-kicker">OFFICIAL FINAL CLASSIFICATION</p>
+                    <h2 id="results-heading">Race results<span class="accent">.</span></h2>
+                </div>
+                <p class="lm-entry-count">Classified finishers first · retired entries after</p>
+            </div>
+            <div class="lm-table-wrap">
+                <table class="lm-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Overall</th>
+                            <th scope="col">Class</th>
+                            <th scope="col">Car / team</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Laps</th>
+                            <th scope="col">Total time</th>
+                            <th scope="col">Best lap</th>
+                            <th scope="col">Pit stops</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results"></tbody>
+                </table>
+            </div>
+            <p class="lm-footnote">A dash indicates a position or time not recorded for a retired entry. Class filter applies to this view too.</p>
+        </section>
+
+        <section class="lm-view" data-panel="points" hidden aria-labelledby="points-heading">
+            <div class="lm-section-heading">
+                <div>
+                    <p class="lm-kicker">CHAMPIONSHIP SCORING</p>
+                    <h2 id="points-heading">WEC points<span class="accent">.</span></h2>
+                </div>
+                <p class="lm-entry-count">Race points and pole bonus shown separately</p>
+            </div>
+            <p class="lm-points-note">These are championship points awarded at Le Mans, not race finishing positions. LMP2 is not a WEC championship class and is therefore shown in the entry list and race results only.</p>
+            <div id="points-tables" class="lm-points-grid"></div>
+        </section>
+
+        <section class="lm-sources" id="official-sources" aria-labelledby="sources-heading">
+            <div>
+                <p class="lm-kicker">CHECK THE ORIGINAL DOCUMENTS</p>
+                <h2 id="sources-heading">Official sources<span class="accent">.</span></h2>
+            </div>
+            <div class="lm-source-links" id="source-links"></div>
+        </section>
+    </main>
+
+    <footer class="footer lm-footer">
+        <span>PADDOCK <span class="accent">/</span>WORLD ENDURANCE CHAMPIONSHIP</span>
+        <span>2026 · LA SARTHE</span>
+    </footer>
 </body>
 </html>
